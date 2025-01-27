@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Değerli Maden, Fiyat Tahmin, Yön Tahmin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Değerli Maden Yön Tahmini</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/global.css">
+    <!-- Mobile Specific CSS -->
+    <link rel="stylesheet" href="/static/mobile.css" media="only screen and (max-width: 768px)">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <h1>Değerli Maden Yön Tahmini</h1>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('whous') }}">Hakkımızda</a></li>
+                <li><a href="{{ url_for('model') }}">Model</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <!-- Video Arka Plan -->
+    <div class="main" id="main">
+        <video autoplay loop muted>
+            <source src="/static/7020083_Gold_Molecular_1920x1080.mp4" type="video/mp4">
+            Tarayıcınız video formatını desteklemiyor.
+        </video>
+        <div class="content">
+            <h2>Değerli Maden Yön Tahmini</h2>
+            <p>Güçlü analizlerle geleceği öngörün.</p>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger menu toggle function
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

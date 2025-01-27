@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="/static/whous.css">
+    <link rel="stylesheet" href="/static/global.css">
+    <!-- Mobile Specific CSS -->
+    <link rel="stylesheet" href="/static/mobile.css" media="only screen and (max-width: 768px)">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1>Hakkımızda</h1>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('model') }}">Model</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!-- Katkıda Bulunanlar Sayfası İçeriği -->
+        <div class="container">
+            <h2>Katkıda Bulunanlar</h2>
+            <ul>
+                <li><strong>Ahmed Aktan</strong></li>
+                <li><strong>Furkan Akyel</strong></li>
+                <li><strong>Yüksel Caner Mülazımoğlu</strong></li>
+            </ul>
+            <h2>Proje Hakkında</h2>
+            <p>Bu proje, İnönü Üniversitesi öğrencileri tarafından geliştirilen bir yapay zeka tabanlı değerli maden yön ve fiyat
+                tahmini sayfasıdır.</p>
+            <p>Amacımız, yapay zeka teknolojileriyle değerli madenlerin yön ve fiyatlarını doğru bir şekilde tahmin
+                edebilmektir.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 İnönü Üniversitesi | Bilgisayar Mühendisliğine Giriş Projesi</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

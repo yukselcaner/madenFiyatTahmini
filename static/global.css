@@ -1,0 +1,88 @@
+/* Renk Paleti */
+:root {
+    --color-primary: #FFD700; /* Altın renk */
+    --color-secondary: #6c757d; /* Nötr gri */
+    --color-tertiary: #0e1117;
+    --color-background: #f8f9fa; /* Açık arka plan */
+    --color-text: #ffffff; /* Ana yazı rengi */
+    --color-text-light: #ffffff; /* Beyaz metin */
+    --color-hover: #FFC107; /* Daha sıcak bir altın tonu */
+    --color-dark: #ffffff; /* Koyu ton */
+    --color-body: #262730;
+}
+
+/* Genel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: var(--color-text);
+}
+
+body {
+   background-color: var(--color-body);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    height: 60px;
+    background-color: var(--color-tertiary);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a {
+    isolation: isolate;
+    font-weight: bold;
+    padding-inline: 1.1rem;
+    padding-block: 0.6rem;
+    color: var(--color-text);
+}
+
+.navbar ul li a:hover {
+    color: var(--color-text);
+    background-color: var(--color-hover);
+    border-radius: 20px;
+}
+
+h1, h2, h3, h4, p, strong, li {
+    color: var(--color-text);
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-body);
+    color: var(--color-text);
+    text-align: center;
+    height: 60px;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-tertiary);
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}

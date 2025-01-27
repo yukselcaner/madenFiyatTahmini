@@ -1,0 +1,45 @@
+.main {
+    height: calc(100vh - 120px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Katkıda Bulunanlar Sayfası */
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--color-tertiary);
+    border-radius: 8px;
+    color: var(--color-text);
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container ul li {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}

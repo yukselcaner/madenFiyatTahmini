@@ -1,0 +1,78 @@
+/* Navbar, Sidebar, ve genel stil ayarları */
+@media (max-width: 768px) {
+    /* Navbar için mobil düzen */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+        z-index: 102; /* Navbar'ı üstte tutalım */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .navbar.active ul {
+        display: block;
+    }
+
+    .navbar ul li a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar ul li a:hover {
+        background-color: var(--color-hover);
+        border-radius: 20px;
+    }
+
+    /* Hamburger menü */
+    .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 103; /* Hamburger menü simgesini navbar'ın üstünde tutalım */
+    }
+
+    .menu-icon i {
+        font-size: 2rem;
+        color: var(--color-text);
+    }
+
+    /* Sidebar mobilde tam ekran açılacak */
+    .sidebar {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        transition: left 0.3s ease-in-out;
+        padding: 20px;
+        margin-top: 60px;
+        z-index: 100;
+    }
+
+    .sidebar.active {
+        left: 0; /* Sidebar açıldığında görünür olur */
+    }
+
+    /* Hamburger menü ikonu mobilde görünür */
+    .sidebar-menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        z-index: 101;
+    }
+}

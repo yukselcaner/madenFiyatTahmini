@@ -1,0 +1,89 @@
+/* Genel stil */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 0px);
+    background-color: var(--color-body);
+    font-family: Arial, sans-serif;
+}
+
+/* Konteyner düzeni */
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* Sağdaki içerik alanı */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+/* Sidebar stili */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.sidebar-menu-icon {
+    display: none; /* Masaüstünde görünmesin */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    isolation: isolate;
+    font-weight: bold;
+    padding-inline: 1.1rem;
+    padding-block: 0.6rem;
+    color: var(--color-text);
+    background-color: var(--color-body); /* Başlangıç arka plan rengi */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Hover efektleri için geçiş */
+}
+
+button:hover {
+    color: var(--color-text); /* Metin rengi hover'da değişir */
+    background-color: var(--color-hover); /* Hover'da arka plan rengi değişir */
+}
+
+/* Başlık ve grafik alanı */
+.plot img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
